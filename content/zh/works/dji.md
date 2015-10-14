@@ -13,9 +13,6 @@ Tags:
 - CSS
 - Wordpress
 
-Link: 
-  src: http://www.dji.com
-  
 Task: 完畢
 
 Featured_img:

@@ -310,6 +310,8 @@ article p, article ul li, aside figcaption{
 
 ul.metadata li{
 	color: #ff9966;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
 }
 
 ul.metadata p{

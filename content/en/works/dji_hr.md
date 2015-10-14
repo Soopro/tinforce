@@ -16,7 +16,8 @@ Tags:
 
 Link:
   title: we.dji.com
-  src: http://we.dji.com
+  link: http://we.dji.com
+
 Task: Complete
 
 Featured_img:

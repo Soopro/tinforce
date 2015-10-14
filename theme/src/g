@@ -8,3 +8,7 @@
 {% set perpage = opts.perpage|int if opts.perpage else 12 %}
 
 {% set robots = 'index, follow' if not meta.is_404 else 'noindex, nofollow' %}
+
+<!-- custom styles -->
+{% set custom_styles = '<style>'+theme_meta.styles+'</style>' 
+   if theme_meta.styles else '' %}

@@ -12,8 +12,8 @@
 <!-- Styles-->
 <link ng-href="{{ theme_url }}/styles/style.css"
  rel="stylesheet" type='text/css'>
-<link ng-href="{{ theme_url }}/styles/{{lang}}.css"
- rel="stylesheet" type='text/css'>
+
+<style ng-bind="theme_meta.styles"></style>
 
 <div id="wrapper">
 	<!-- Header -->

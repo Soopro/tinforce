@@ -36,7 +36,7 @@
 							{% if meta.link %}
 							<li>
                 <p>
-                  <a rel="external" href="{{ meta.link.src }}">
+                  <a rel="external" href="{{ meta.link.link | url }}">
                     {{ meta.link.title }}
                   </a>
                 </p>
