@@ -45,7 +45,7 @@
 	<!-- Tagline -->
 	<div class="container">
 		<section class="jumbotron">
-			<h1 class="title" sup-editor-meta ng-model="meta.title"
+			<h1 class="title" sup-editor-meta ng-model="meta.tagline"
        default="{{_('Works')}}">
       </h1>
 			<a href="#" class="btn-list"></a>
@@ -58,7 +58,7 @@
 			<div class="col-sm-4 col-xs-12 pull-right">
 				<article>
 					<header>
-						<h5>{{_('Description')}}</h5>
+						<h5>{{meta.title}}</h5>
 					</header>
 					<div sup-editor-meta ng-model="meta.description"
            default="{{_('Description text here.')}}">
