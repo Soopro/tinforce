@@ -1,10 +1,8 @@
 /*
 Title: About
 Date: 2014-01-01
-Nav: About
 Order: 0
 Template: page
-Tagline: About
 */
 
 <section class="row">
@@ -14,7 +12,7 @@ Tagline: About
 				<h2>What we do ?</h2>
 			</header>
 			<p>Anyone can running their own business through the Internet. Anyone can own a brand.</p>
-			<p>We are here to help small business comes to engaging e-commerce. Our Products is fully support Facebook Twitter WeChat and many other social media platform.</p>
+			<p>We are here to help small business comes to engaging e-commerce. Our Solution is fully support Facebook Twitter WeChat and many other social media platform.</p>
 		</article>
 	</div>
 	<div class="col-md-6">

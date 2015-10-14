@@ -420,7 +420,7 @@ html[lang^="zh"] h5,
 html[lang^="zh"] h6,
 html[lang^="zh"] p,
 html[lang^="zh"] label {
-  font-family: RobotoDraft, Roboto,
+  font-family: 'Lato',
                'Hiragino Sans GB', STHeiti, 'Microsoft YaHei',
                'Helvetica Neue', Helvetica,
                Arial, 'Lucida Grande', sans-serif;
