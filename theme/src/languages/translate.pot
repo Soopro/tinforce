@@ -1,0 +1,56 @@
+"Project-Id-Version: Tinforce SupTheme\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: redy <redy.ru@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"X-Generator: Poedit 1.6.4\n"
+
+#: index.html:35
+msgid "More"
+msgstr ""
+
+#: index.tpl:49
+msgid "Tagline"
+msgstr ""
+
+#: _header.html:7
+#: *.tpl
+msgid "Languages"
+msgstr ""
+
+#: error_404.html:49
+msgid "Error 404"
+msgstr ""
+
+#: error_404.tpl:57
+msgid "$_ERROR404"
+msgstr ""
+
+#: page.tpl:49
+msgid "Title"
+msgstr ""
+
+#: page.tpl:57
+msgid "$_CONTENT"
+msgstr ""
+
+#: works.html:24
+#: works.tpl:49
+msgid "Description"
+msgstr ""
+
+#: works.tpl:49
+msgid "Works"
+msgstr ""
+
+#: works.tpl:64
+msgid "Description text here."
+msgstr ""
+
+#: works.tpl:72
+msgid "Task status"
+msgstr ""

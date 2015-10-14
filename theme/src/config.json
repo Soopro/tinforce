@@ -1,0 +1,46 @@
+{
+	"alias":"tinforce",
+	"title":{
+	  "en":"Tinforce Theme",
+    "zh":"Tinforce 主题"
+	},
+  "author":"Redy Ru",
+	"thumbnail":"thumbnail.png",
+  "capability":["ws"],
+	"previews":["previews.jpg"],
+	"description": {
+	  "en":"A simple profolio website for your showcase.",
+    "zh":"这是一个简单的作品集网站，用来展示您的作品。"
+	},
+	
+  "templates":{
+    "index":{
+      "en": "Homepage",
+      "zh": "首页"
+    },
+    "page":{
+      "en": "Static Page",
+      "zh": "静态页面"
+    },
+    "works":{
+      "en": "Works",
+      "zh": "作品页"
+    },
+    "error_404": "404"
+  },
+  
+  "content_types":[
+    {"alias":"works", "title":"Portfolio"}
+  ],
+  
+  "mode": 1,
+  
+	"options":{
+		"sortby":"date",
+		"excerpt_length":162,
+		"excerpt_ellipsis":"&hellip;",
+		"date_format": "%B %d, %Y",
+		"perpage":12,
+    "markdown":false
+  }
+}
