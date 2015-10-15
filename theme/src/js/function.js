@@ -19,7 +19,7 @@ var item_step=4;
 
 var language_texts = {
   "en":"Languages",
-  "zh":"漢語",
+  "zh":"語言",
 }
 
 $(document).ready(function () {
