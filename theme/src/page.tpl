@@ -2,7 +2,7 @@
          value="{{theme_url+'/styles/logo.png'}}"></sup-set>
 
 <!-- Webfonts -->
-<link ng-href='{{ theme_url }}/styles/fonts/webfonts.css'
+<link ng-href='{{ theme_url }}/styles/fonts/lato.css'
  rel='stylesheet' type='text/css'>
 
 <!-- Bootstrap core CSS -->
