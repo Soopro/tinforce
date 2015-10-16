@@ -415,6 +415,10 @@ article .metadata{
 /* ----------------------------------------------- */
 
 html[lang^="zh"] body,
+html[lang^="zh"] div,
+html[lang^="zh"] a,
+html[lang^="zh"] ul li,
+html[lang^="zh"] button,
 html[lang^="zh"] h1,
 html[lang^="zh"] h2,
 html[lang^="zh"] h3,
