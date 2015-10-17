@@ -1,6 +1,5 @@
 {% set default_logo = theme_url+'/styles/logo.png' %}
-{% set default_touch_icon = theme_url+'/styles/touicon.png' %}
-{% set default_favicon_icon = theme_url+'/styles/favicon.png' %}
+{% set default_favicon = theme_url+'/styles/favicon.png' %}
 
 {% set opts = theme_meta.options %}
 <!-- paged -->
