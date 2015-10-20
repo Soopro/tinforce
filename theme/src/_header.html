@@ -2,9 +2,9 @@
 	<div class="row">
 		{% if translates %}
 		<div id="language" class="col-sm-3 pull-right">
-			<a href="#lang" class="language-switcher language-switcher-btn" 
-       ontouchstart="language-switcher-btn-on" lang="{{lang}}">
-       {{_('Languages')}}
+			<a href="#lang" class="language-switcher-btn" 
+       ontouchstart="language-switcher-btn-on">
+       <span class="language-switcher-text">{{_('Languages')}}</span>
       </a>
 			<div id="lang" class="language-list">
 				{% for trans in translates %}

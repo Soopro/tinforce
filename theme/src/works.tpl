@@ -21,9 +21,9 @@
 		<div class="row">
 			<div id="language" class="col-md-2 col-sm-2 pull-right"
        ng-if="translates">
-				<span id="language-switcher" class="language-switcher-btn-disabled">
-          {{_('Languages')}}
-        </span>
+				<a href="#" class="language-switcher-btn-disabled">
+          <span class="language-switcher-text">{{_('Languages')}}</span>
+        </a>
 			</div>
 			<div id="logo" class="col-sm-3">
 				<a href="#">
