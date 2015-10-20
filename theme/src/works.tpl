@@ -83,6 +83,11 @@
 			</div>
 			<div class="col-sm-8 col-xs-12 pull-left">
 				<aside>
+          <figure class="featured-img" ng-if="meta.featured_img.src">
+            <a class="lightbox-gallery" href="#">
+              <img src="{{meta.featured_img.src}}" />
+            </a>
+          </figure>
       		<div sup-angular-wysiwyg="sup-editor" ng-model="content"
            default="{{_('$_CONTENT')}}"></div>
 				</aside>
