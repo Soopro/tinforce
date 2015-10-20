@@ -32,7 +32,7 @@ $(document).ready(function () {
         $(this).html(language_texts[key]);
       }
     }
-	})
+	});
   .click(function() {
     var lang_list = $(this).attr('href');
 		$(lang_list).toggle(200);
