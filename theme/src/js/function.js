@@ -24,7 +24,7 @@ var language_texts = {
 
 $(document).ready(function () {
 	//Language Switcher
-	$('#language-switcher')
+	$('.language-switcher')
   .each(function() {
 		var lang = userLocale.split('_')[0] || 'en';
     for(var key in language_texts){
