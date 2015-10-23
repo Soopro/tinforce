@@ -30,9 +30,9 @@
     "error_404": "404"
   },
   
-  "content_types":[
-    {"alias":"works", "title":"Portfolio"}
-  ],
+  "content_types":{
+    "works":{"title": "Portfolio"}
+  },
   
   "mode": 1,
   
