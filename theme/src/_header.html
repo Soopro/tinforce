@@ -27,7 +27,8 @@
 			<ul>
 				{% for item in menu.primary %}
 				<li>
-          <a href="{{ item.url }}" ontouchstart="nav-btn-on">
+          <a href="{{ item.url }}" target="{{item.target}}"
+           ontouchstart="nav-btn-on">
             {{ item.title }}
           </a>
         </li>
