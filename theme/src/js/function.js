@@ -5,7 +5,13 @@ http://www.tinforce.com
 Author:   redy
 **/
 
-var userLang = navigator.language || navigator.userLanguage
+if(navigator.languages){
+  navigator_language = navigator.languages[0]
+}else{
+  navigator_language = navigator.language || navigator.userLanguage
+}
+
+var userLang = navigator_language
 var userLocale = userLang.replace('-','_')
 
 //fix old browser no console

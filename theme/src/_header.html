@@ -8,7 +8,7 @@
       </a>
 			<div id="lang" class="language-list">
 				{% for trans in translates %}
-					{% if lang in trans.code %}
+					{% if trans.active %}
 					<span class="lang-current-item">{{trans.name}}</span>
 					{% else %}
 					<a class="lang-item" href="{{trans.url}}">{{trans.name}}</a>
