@@ -25,11 +25,11 @@
 		</div>
 		<nav id="nav" class="col-sm-6">
 			<ul>
-				{% for item in menu.primary %}
+				{% for nav in menu.primary %}
 				<li>
-          <a href="{{ item.url }}" target="{{item.target}}"
-           ontouchstart="nav-btn-on">
-            {{ item.title }}
+          <a href="{{ nav.url }}" target="{{nav.target}}"
+           class="{{nav.meta.class}}" ontouchstart="nav-btn-on">
+            {{ nav.title }}
           </a>
         </li>
 				{% endfor %}

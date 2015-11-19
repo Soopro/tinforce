@@ -34,8 +34,8 @@
 
 			<nav id="nav" class="col-md-4 col-sm-4">
 				<ul>
-					<li ng-repeat="item in menu.primary">
-              <a href="#">{{item.title}}</a>
+					<li ng-repeat="nav in menu.primary">
+              <a href="#" class="{{nav.meta.class}}">{{nav.title}}</a>
           </li>
 				</ul>
 			</nav>
