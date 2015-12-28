@@ -53,11 +53,7 @@
 	<!-- #Tagline -->
 	<!-- Contents -->
 	<div class="container">
-		<section class="row works-list" sup-editor-content-query
-     fields="{type:'works'}"
-     length="theme_meta.options.perpage"
-     sortby="theme_meta.options.sortby"
-     ng-model="query.works">
+		<section class="row works-list" sup-query="works" ng-model="query.works">
       <figure class="col-md-3 col-sm-6 show" sup-editor-open file="item"
        ng-repeat="item in query.works" ng-if="item.title && item.featured_img">
         <a href="#">
