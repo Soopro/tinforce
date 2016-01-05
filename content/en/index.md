@@ -1,8 +1,10 @@
 /*
-Title: Digital Studio.
+Date: '2012-01-01'
 Description: Create unique online promotion.
-Date: 2012-01-01
 Order: 0
-Template: index
+Priority: 0
+Status: 1
 Tagline: Create unique<br>online promotion.
+Template: index
+Title: Digital Studio.
 */

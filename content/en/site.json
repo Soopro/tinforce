@@ -1,33 +1,39 @@
 {
   "content_types": {
+    "page": "Static Pages",
     "works": "Portfolio"
   },
   "menus": {
     "primary": [
       {
         "alias": "home",
+        "id": "",
+        "link": "/",
         "meta": {},
         "nodes": [],
-        "title": "Home",
-        "link": "/"
+        "status": 1,
+        "target": "",
+        "title": "Home"
       },
       {
         "alias": "about-us",
+        "id": "",
+        "link": "/about-us",
         "meta": {},
         "nodes": [],
-        "title": "About us",
-        "link": "/about-us"
+        "status": 1,
+        "target": "",
+        "title": "About us"
       }
     ]
   },
   "meta": {
-    "alias":"tinforce",
-    "type":"ws",
-    "logo": "/$uploads/logo.png",
+    "alias": "tinforce",
     "copyright": "2012-2015 &copy; Tinforce Digital Studio.",
     "description": "Tinforce Digtial Studio is specialized in online promotion.",
     "license": "",
-    "locale": "en_US",
+    "locale": "zh_CN",
+    "logo": "/$uploads/logo.png",
     "title": "Tinforce Digital Studio",
     "translates": {
       "en_US": {
@@ -38,6 +44,8 @@
         "name": "漢語",
         "url": "http://tinforce.com/zh/"
       }
-    }
-  }
+    },
+    "type": "ws"
+  },
+  "terms": {}
 }
