@@ -1,0 +1,49 @@
+[
+  {"Language":"zh"},
+  
+  {
+    "msgid": "More",
+    "msgstr": "更多"
+  },
+  {
+    "msgid": "Tagline",
+    "msgstr": "標語"
+  },
+  {
+    "msgid": "Languages",
+    "msgstr": "語言"
+  },
+  {
+    "msgid": "Error 404",
+    "msgstr": "錯誤404"
+  },
+  {
+    "msgid": "Title",
+    "msgstr": "標題"
+  },
+  {
+    "msgid": "Description",
+    "msgstr": "簡述"
+  },
+  {
+    "msgid": "Works",
+    "msgstr": "作品"
+  },
+
+  {
+    "msgid": "Description text here.",
+    "msgstr": "在這裡填寫簡述內容。"
+  },
+  {
+    "msgid": "Task status",
+    "msgstr": "進展"
+  },
+  {
+    "msgid": "$_CONTENT",
+    "msgstr": "<p>這是一段是默認的訃聞本內容，你可以按照自己的需要重新填寫。進入富文本編輯狀態後，將出現一個輸入工具條（它通常會在畫面頂部或是富文本區域上方），使用工具條可以插入、更換或者刪除圖片和超鏈接。</p>"
+  },
+  {
+    "msgid": "$_ERROR404",
+    "msgstr": "<p>很抱歉，沒有辦法找到您要打開的頁面，或許您搞錯了網址。</p>"
+  }
+]
