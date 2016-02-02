@@ -5,23 +5,22 @@ http://www.tinforce.com
 Author:   redy
 **/
 
-if(navigator.languages){
-  navigator_language = navigator.languages[0]
+if(navigator.languages && navigator.languages.length > 1){
+  navigator_language = navigator.languages[0];
 }else{
-  navigator_language = navigator.language || navigator.userLanguage
+  navigator_language = navigator.language || navigator.userLanguage;
 }
 
-var userLang = navigator_language
-var userLocale = userLang.replace('-','_')
+var userLang = navigator_language;
+var userLocale = userLang.replace('-','_');
 
 //fix old browser no console
 if (!window.console) {
 	window["console"] = {log: function(){}};
 }
 
-var item_limit=12;
-var item_count=0;
-var item_step=4;
+var prepage = 12;
+var paged = 1;
 
 var language_texts = {
   "en":"Languages",
@@ -29,10 +28,11 @@ var language_texts = {
 }
 
 $(document).ready(function () {
+
 	//Language Switcher
 	$('.language-switcher-text')
   .each(function() {
-		var lang = userLocale.split('_')[0] || 'en';
+    var lang = userLocale.split('_')[0] || 'en';
     for(var key in language_texts){
       if(key == lang){
         $(this).html(language_texts[key]);
@@ -40,55 +40,36 @@ $(document).ready(function () {
     }
 	});
   
-  $('.language-switcher-btn')
-  .click(function() {
+  $('.language-switcher-btn').click(function() {
     var lang_list = $(this).attr('href');
 		$(lang_list).toggle(200);
 		return false;
 	});
 	
 	//Pagination
-	if($('.works-list').length>0){
-		$('.works-list').each(function(){
-			var $figure=$(this).children('figure');
-			$figure.each(function(){
-				if(item_count<item_limit){
-					$(this).show();
-					item_count++;
-				}
-			});
-			
-			var $btn_more=$(this).parent().find('.btn-more');
-			if(item_count<$figure.length){
-			
-				if($btn_more.length>0){
-					$btn_more.show();
-					$btn_more.click(function(){
-						
-						var tmp_last=item_count;
-						
-						item_limit=tmp_last+item_step;
-						item_limit=item_limit>$figure.length?$figure.length:item_limit;
-
-						item_count=0;
-
-						$figure.each(function(){
-							if(item_count<item_limit){
-								$(this).show();
-								item_count++;
-							}
-							console.log(item_count);
-						});
-						
-						if(item_count>=$figure.length){
-							$btn_more.hide();
-						}
-						return false;
-					});
-				}
-				
-			}
-		});
+	if($('.works-list').length > 0){
+    prepage = $('.works-list').data('prepage');
+    function refresh_list (){
+  		$('.works-list > figure').each(function(idx, entry){
+        console.log(idx, prepage * paged);
+  			if(idx < prepage * paged){
+  				$(entry).show();
+  			}
+  		});
+      if($('.works-list > figure').length <= prepage * paged) {
+        $('.btn-more').hide();
+      }else{
+        $('.btn-more').show();
+      }
+    }
+		
+    refresh_list();
+    
+    $('.btn-more').click(function(e){
+      paged++;
+      refresh_list();
+      return false;
+    });
 	}
 	
 	//Lightbox

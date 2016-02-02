@@ -16,10 +16,10 @@
     <!-- #Tagline -->
     <!-- Contents -->
     <div class="container">
-      <section class="row works-list">
+      <section class="row works-list" data-prepage="{{g.perpage}}">
         {% for works in pages | type("works") %}
           {% if works.title and works.featured_img %}
-            <figure class="col-md-3 col-sm-6">
+            <figure class="col-md-3 col-sm-6" style="display:none;">
               <a href="{{works.url}}">
                 <figcaption>{{works.title}}</figcaption>
                 <img src="{{ works.featured_img.src | thumbnail }}"
@@ -31,7 +31,8 @@
       </section>
       <section class="row">
         <div class="col-md-3 pull-right more">
-          <a class="btn-more" href="#more" ontouchstart="btn-more-on">
+          <a class="btn-more" href="#more" style="display:none;"
+           ontouchstart="btn-more-on">
             {{_('More')}}
           </a>
         </div>

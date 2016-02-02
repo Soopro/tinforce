@@ -175,10 +175,10 @@ mark {
 	border-radius: 10px;
 	background: #eee;
 	overflow: hidden;
-	display: none;
 	z-index: 999;
 	white-space: nowrap;
 }
+
 
 .lang-item, .lang-item:link, .lang-item:visited{
 	padding: 5px 10px;
@@ -211,11 +211,8 @@ mark {
 .works-list figure{
 	position: relative;
 	margin-bottom: 30px;
-	display: none;
 }
-.works-list figure.show{
-  display: block;
-}
+
 .works-list figure img{
 	width: 100%;
 	height: auto;
@@ -254,8 +251,8 @@ mark {
 	text-decoration: none;
 	padding-left: 15px;
 	font-size: 12px;
-	display: none;
 }
+
 .btn-more:hover, .btn-more-on{
 	color: #f96;
 }

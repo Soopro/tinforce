@@ -6,7 +6,7 @@
        ontouchstart="language-switcher-btn-on">
        <span class="language-switcher-text">{{_('Languages')}}</span>
       </a>
-			<div id="lang" class="language-list">
+			<div id="lang" class="language-list" style="display:none;">
 				{% for trans in translates %}
 					{% if trans.active %}
 					<span class="lang-current-item">{{trans.name}}</span>
