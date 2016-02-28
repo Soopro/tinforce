@@ -96,7 +96,11 @@ mark {
 	color:#f96;
 	background:none;
 }
-
+img,
+embed,
+iframe {
+  max-width: 100%;
+}
 /* The actual visual size of the page */
 #wrapper{
 	position: relative;
