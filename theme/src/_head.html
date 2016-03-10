@@ -8,9 +8,9 @@
 <meta name="description" content="{{ meta.description | striptags }}">
 <meta name="robots" content="{{ g.robots }}">
 <meta name="author" content="{{ meta.author | striptags }}">
-<meta name="theme-alias" content="{{theme_meta.alias}}">
-<meta name="theme-version" content="{{theme_meta.version}}">
-<meta name="ip" content="{{ip}}">
+<meta name="keywords" content="{{site_meta.keywords}}">
+
+{% include '_app_metas_.html' %}
 
 <!-- Browser support -->
 <meta name="viewport" 
