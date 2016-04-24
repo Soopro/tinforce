@@ -1,17 +1,18 @@
 {
-  "version":"1.1.11",
+  "version":"1.2.0",
   "alias":"tinforce",
 	"title":{
 	  "en":"Tinforce",
       "zh":"Tinforce"
 	},
   "author":"Redy Ru",
-	"thumbnail":"thumbnail.png",
   "capability":["ws"],
+	"thumbnail":"thumbnail.png",
+  "poster":"poster.jpg",
 	"previews":["previews.jpg"],
 	"description": {
 	  "en":"A simple profolio website for your showcase.",
-      "zh":"这是一个简单的作品集网站，用来展示您的作品。"
+    "zh":"这是一个简单的作品集网站，用来展示您的作品。"
 	},
 
   "templates":{
