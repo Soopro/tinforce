@@ -1,5 +1,5 @@
 {
-  "version":"1.3.0",
+  "version":"1.4.0",
   "slug":"tinforce",
 	"title":{
 	  "en":"Tinforce",
@@ -28,14 +28,16 @@
       "en": "Works",
       "zh": "作品页"
     },
-    "error_404": "404"
+    "error-404": "404"
   },
 
   "content_types":{
     "works":{"title": "Portfolio"}
   },
 
-  "mode": 1,
+  "reserved_contents": {
+    "error-404": true
+  },
 
 	"options":{
 		"sortby":"date",
