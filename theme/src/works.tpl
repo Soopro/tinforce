@@ -45,7 +45,7 @@
 	<!-- Tagline -->
 	<div class="container">
 		<section class="jumbotron">
-			<h1 class="title" sup-editor-meta ng-model="meta.tagline"
+			<h1 class="title" sup-widget-text ng-model="meta.tagline"
        default="{{_('Works')}}">
       </h1>
 			<a href="#" class="btn-list"></a>
@@ -60,7 +60,7 @@
 					<header>
 						<h5>{{meta.title}}</h5>
 					</header>
-					<div sup-editor-meta ng-model="meta.description"
+					<div sup-widget-text ng-model="meta.description"
            default="{{_('Description text here.')}}">
 					</div>
 					<ul class="metadata">
@@ -68,12 +68,12 @@
 							<p>{{meta.date_formatted || ''}}</p>
 						</li>
 						<li>
-							<p sup-editor-meta ng-model="meta.task"
+							<p sup-widget-text ng-model="meta.task"
                default="{{_('Task status')}}"></p>
 						</li>
 						<li>
               <p>
-                <a href="#" sup-editor-widget-button ng-model="meta.link">
+                <a href="#" sup-widget-button ng-model="meta.link">
                   {{meta.link.title || '&nbsp;&nbsp;&nbsp;' }}
                 </a>
               </p>
@@ -88,7 +88,7 @@
               <img src="{{meta.featured_img.src}}" />
             </a>
           </figure>
-      		<div sup-angular-wysiwyg="sup-editor" ng-model="content"
+      		<div sup-angular-wysiwyg ng-model="content"
            default="{{_('$_CONTENT')}}"></div>
 				</aside>
 			</div>

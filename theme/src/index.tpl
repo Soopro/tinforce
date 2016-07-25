@@ -45,7 +45,7 @@
 	<!-- Tagline -->
 	<div class="container">
 		<section class="jumbotron">
-			<h1 sup-editor-meta ng-model="meta.tagline"
+			<h1 sup-widget-text ng-model="meta.tagline"
        default="{{_('Tagline')}}">
       </h1>
 		</section>
@@ -54,7 +54,7 @@
 	<!-- Contents -->
 	<div class="container">
 		<section class="row works-list" sup-query="works" ng-model="query.works">
-      <figure class="col-md-3 col-sm-6 show" sup-editor-open file="item"
+      <figure class="col-md-3 col-sm-6 show" sup-widget-open file="item"
        ng-repeat="item in query.works" ng-if="item.title && item.featured_img">
         <a href="#">
 			    <figcaption>{{item.title}}</figcaption>
