@@ -65,7 +65,7 @@
 					</div>
 					<ul class="metadata">
 						<li>
-							<p>{{meta.date_formatted || ''}}</p>
+							<p>{{meta|date_formatted || ''}}</p>
 						</li>
 						<li>
 							<p sup-widget-text ng-model="meta.task"
