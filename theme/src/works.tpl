@@ -27,7 +27,7 @@
 			</div>
 			<div id="logo" class="col-sm-3">
 				<a href="#">
-          <img ng-src="{{site_meta.logo || g.default_logo}}" 
+          <img ng-src="{{site_meta.logo || g.default_logo}}"
            alt="{{ site_meta.title }}" title="{{ site_meta.title }}" />
         </a>
 			</div>
@@ -65,7 +65,7 @@
 					</div>
 					<ul class="metadata">
 						<li>
-							<p>{{meta.date|date_formatted || ''}}</p>
+							<p>{{meta.date|date_formatted}}</p>
 						</li>
 						<li>
 							<p sup-widget-text ng-model="meta.task"
@@ -85,11 +85,12 @@
 				<aside>
           <figure class="featured-img" ng-if="meta.featured_img.src">
             <a class="lightbox-gallery" href="#">
-              <img src="{{meta.featured_img.src}}" />
+              <img ng-src="{{meta.featured_img.src}}" />
             </a>
           </figure>
-      		<div sup-angular-wysiwyg ng-model="content"
-           default="{{_('$_CONTENT')}}"></div>
+      		<div sup-angular-wysiwyg
+               ng-model="content"
+               default="{{_('$_CONTENT')}}"></div>
 				</aside>
 			</div>
 		</section>
