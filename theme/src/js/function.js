@@ -47,10 +47,10 @@ $(document).ready(function () {
 	if($('.works-list').length > 0){
     var work_list = $('.works-list');
     var work_item = $('.works-list figure')[0];
-    var prepage = work_list.data('prepage') || 12;
+    var perpage = work_list.data('perpage') || 12;
     var app_id = work_list.data('app-id');
     var api_baseurl = work_list.data('api-baseurl');
-    var paged = 0;
+    var paged = 1;
 
     function _thumbnail(src) {
       if (!src) {
@@ -59,26 +59,34 @@ $(document).ready(function () {
       var pair = src.indexOf('?') > -1 ? '&' : '?';
       return src+pair+'thumbnail';
     }
+
     function refresh_list (paged){
-      $ajax.get(api_baseurl, {paged: paged}, function(data){
-        for(var i=0; i<data.contents.length; i++){
-          var entry = data[i];
-          var item = $(work_item).clone();
-          item.('a').attr('href', entry.url);
-          item.('figcaption').html(entry.title);
-          if (!entry.featured_img){
-            entry.featured_img = {};
-          }
-          item.('img').attr('src', _thumbnail(entry.featured_img.src));
-          item.('img').attr('title', entry.featured_img.title);
-          work_list.append(item);
-        };
-        if(data.paged < date.total_pages){
-          $('.btn-more').show();
-    		} else {
-    		  $('.btn-more').hide();
-    		};
-      });
+      $.get(
+        api_baseurl+'/app/'+app_id+'/view/content/works',
+        {paged: paged, perpage: perpage},
+        function(data){
+          var last_entry = null;
+          for(var i=0; i<data.length; i++){
+            var entry = data[i];
+            var item = $(work_item).clone();
+            item.find('a').attr('href', entry.url);
+            item.find('figcaption').html(entry.title);
+            if (!entry.featured_img){
+              entry.featured_img = {};
+            }
+            item.find('img').attr('src', _thumbnail(entry.featured_img.src));
+            item.find('img').attr('title', entry.featured_img.title);
+            item.show();
+            work_list.append(item);
+            last_entry = entry;
+          };
+
+          if(last_entry && last_entry.pagination.has_more){
+            $('.btn-more').show();
+      		} else {
+      		  $('.btn-more').hide();
+      		};
+        });
     }
 
     refresh_list(paged);
