@@ -1,5 +1,5 @@
 {
-  "version":"1.4.3",
+  "version":"1.5.3",
   "slug":"tinforce",
 	"title":{
 	  "en":"Tinforce",
@@ -40,11 +40,6 @@
   },
 
 	"options":{
-		"sortby":"date",
-		"excerpt_length":162,
-		"excerpt_ellipsis":"&hellip;",
-		"date_format": "%Y-%m-%d",
-		"perpage":12,
-    "markdown":false
+		"sortby":"date"
   }
 }

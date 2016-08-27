@@ -4,9 +4,7 @@
 {% include "_head.html" %}
 <body>
   <div id="wrapper">
-    <!-- Header -->
     {% include "_header.html" %}
-    <!-- #Header -->
     <!-- Tagline -->
     <div class="container">
       <section class="jumbotron">
@@ -16,32 +14,33 @@
     <!-- #Tagline -->
     <!-- Contents -->
     <div class="container">
-      <section class="row works-list" data-prepage="{{g.perpage}}">
-        {% for works in pages | type("works") %}
-          {% if works.title and works.featured_img %}
-            <figure class="col-md-3 col-sm-6" style="display:none;">
-              <a href="{{works.url}}">
-                <figcaption>{{works.title}}</figcaption>
-                <img src="{{ works.featured_img.src | thumbnail }}"
-                 title="{{works.title}}" alt="{{works.title}}" />
-              </a>
-            </figure>
-          {% endif %}
-        {% endfor %}
+      <section class="row works-list"
+               data-app-id="{{app_id}}"
+               data-api-baseurl="{{api_baseurl}}"
+               data-prepage="{{g.perpage}}">
+
+        <figure class="col-md-3 col-sm-6"
+                style="display: none;">
+          <a href="#">
+            <figcaption></figcaption>
+            <img src="#" alt="#" />
+          </a>
+        </figure>
+
       </section>
       <section class="row">
         <div class="col-md-3 pull-right more">
-          <a class="btn-more" href="#more" style="display:none;"
-           ontouchstart="btn-more-on">
+          <a class="btn-more"
+             href="#more"
+             style="display:none;"
+             ontouchstart="btn-more-on">
             {{_('More')}}
           </a>
         </div>
       </section>
     </div>
     <!-- #Contents -->
-    <!-- Footer -->
     {% include "_footer.html" %}
-    <!-- #Footer -->
   </div>
 </body>
 </html>

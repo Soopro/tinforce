@@ -1,8 +1,9 @@
+<!-- Header -->
 <header id="header" class="container">
 	<div class="row">
 		{% if translates %}
 		<div id="language" class="col-sm-3 pull-right">
-			<a href="#lang" class="language-switcher-btn" 
+			<a href="#lang" class="language-switcher-btn"
        ontouchstart="language-switcher-btn-on">
        <span class="language-switcher-text">{{_('Languages')}}</span>
       </a>
@@ -19,7 +20,7 @@
 		{% endif %}
 		<div id="logo" class="col-sm-3">
 			<a href="{{ base_url }}">
-        <img src="{{site_meta.logo or g.default_logo}}" 
+        <img src="{{site_meta.logo or g.default_logo}}"
          alt="{{ site_meta.title }}" title="{{ site_meta.title }}" />
       </a>
 		</div>
@@ -37,3 +38,4 @@
 		</nav>
 	</div>
 </header>
+<!-- #Header -->

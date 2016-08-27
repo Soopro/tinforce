@@ -4,9 +4,7 @@
 {% include "_head.html" %}
 <body>
 	<div id="wrapper">
-		<!-- Header -->
 		{% include "_header.html" %}
-		<!-- #Header -->
 		<!-- Tagline -->
 		<div class="container">
 			<section class="jumbotron">
@@ -50,7 +48,7 @@
             {% if meta.featured_img.src %}
             <figure class="featured-img">
               <a class="lightbox-gallery" href="{{meta.featured_img.src}}">
-                <img src="{{meta.featured_img.src}}" 
+                <img src="{{meta.featured_img.src}}"
                  alt="{{meta.featured_img.title}}"/>
               </a>
             </figure>
@@ -61,9 +59,7 @@
 			</section>
 		</div>
 		<!-- #Contents -->
-		<!-- Footer -->
 		{% include "_footer.html" %}
-		<!-- #Footer -->
 	</div>
 </body>
 </html>
