@@ -1,15 +1,15 @@
 <!-- webfonts -->
-<link ng-href='{{ theme_url }}/styles/fonts/lato.css'
+<link ng-href='{{ theme_url }}/styles/fonts/lato.css?{{g.ver}}'
       rel='stylesheet'
       type='text/css'>
 
 <!-- bootstrap-->
-<link ng-href="{{ theme_url }}/libs/bootstrap/css/bootstrap.min.css"
+<link ng-href="{{ theme_url }}/libs/bootstrap/css/bootstrap.min.css?{{g.ver}}"
       rel="stylesheet"
       type='text/css'>
 
 <!-- styles -->
-<link ng-href="{{ theme_url }}/styles/style.css"
+<link ng-href="{{ theme_url }}/styles/style.css?{{g.ver}}"
       rel="stylesheet"
       type='text/css'>
 

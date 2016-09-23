@@ -8,7 +8,7 @@ Date:     15 nov 2013
 Version: 1.0
 ----------------------------------------------- */
 
-/* 
+/*
 RESET: =Reset
 ----------------------------------------------- */
 *{
@@ -106,8 +106,9 @@ iframe {
 /* The actual visual size of the page */
 #wrapper{
 	position: relative;
-	max-width:970px;
-	margin: 50px auto 0 auto;
+	max-width: 970px;
+	margin: 0 auto 0 auto;
+  padding-top: 50px;
 }
 
 #nav, #language{
@@ -121,7 +122,7 @@ iframe {
 	float: left;
 }
 #nav a, #nav a:link, #nav a:visited{
-	
+
 	text-decoration: none;
 	text-transform: uppercase;
 	font-size: 12px;
@@ -375,7 +376,7 @@ article .metadata{
 	.fixed-title{
 		margin-left:-0.1em;
 	}
-	
+
 }
 @media screen and (min-width:768px){
 	.jumbotron h1{
@@ -440,7 +441,7 @@ html[lang^="zh"] label {
 	html[lang^="zh"] .jumbotron h1{
 		line-height: 1.1em;
 	}
-	
+
 }
 @media screen and (min-width:768px){
 	html[lang^="zh"] .jumbotron h1{

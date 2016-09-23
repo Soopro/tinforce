@@ -1,7 +1,7 @@
 {% set default_logo = theme_url+'/styles/logo.png' %}
 {% set default_favicon = theme_url+'/styles/favicon.png' %}
 
-{% set ver = theme_meta.version %}
+{% set ver = theme_meta.version + '.20160923' %}
 {% set opts = theme_meta.options %}
 
 {% set perpage = opts.perpage|int if opts.perpage else 12 %}
