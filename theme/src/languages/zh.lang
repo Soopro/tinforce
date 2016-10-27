@@ -1,6 +1,6 @@
 [
   {"Language":"zh"},
-  
+
   {
     "msgid": "More",
     "msgstr": "更多"
@@ -37,6 +37,10 @@
   {
     "msgid": "Task status",
     "msgstr": "進展"
+  },
+  {
+    "msgid": "Project link",
+    "msgstr": "項目鏈接"
   },
   {
     "msgid": "$_CONTENT",

@@ -41,7 +41,7 @@
                 <a href="#"
                    sup-widget-button
                    ng-model="meta.link">
-                  {{meta.link.title || '&nbsp;&nbsp;&nbsp;' }}
+                  {{meta.link.title || _('Project link') }}
                 </a>
               </p>
 						</li>

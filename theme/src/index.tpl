@@ -19,8 +19,7 @@
              sup-query="works"
              ng-model="query.portfolio">
       <figure class="col-md-3 col-sm-6 show"
-              sup-widget-open
-              file="works"
+              sup-widget-open="works"
               ng-repeat="works in query.portfolio.contents">
         <a href="#">
 			    <figcaption>{{works.title}}</figcaption>
