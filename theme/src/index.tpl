@@ -17,7 +17,18 @@
 	<div class="container">
 		<section class="row works-list"
              sup-query="works"
+             perpage="11"
              ng-model="query.portfolio">
+
+      <figure class="col-md-3 col-sm-6 show"
+              sup-widget-create
+              type="works">
+        <a href="#">
+			    <figcaption>{{works.title}}</figcaption>
+			    <img ng-src="{{g.default_img}}"/>
+        </a>
+			</figure>
+
       <figure class="col-md-3 col-sm-6 show"
               sup-widget-open="works"
               ng-repeat="works in query.portfolio.contents">
