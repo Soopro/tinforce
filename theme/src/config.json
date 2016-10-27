@@ -1,45 +1,33 @@
 {
-  "version":"1.4.8",
-  "slug":"tinforce",
-	"title":{
-	  "en":"Tinforce",
-      "zh":"Tinforce"
-	},
-  "author":"Redy Ru",
-  "capability":["ws"],
-	"thumbnail":"thumbnail.png",
-  "poster":"poster.jpg",
-	"previews":["previews.jpg"],
+  "version": "1.4.8",
+  "slug": "tinforce",
+	"title": "Tinforce",
+  "author": "Redy Ru",
+  "capability": ["ws"],
+	"icon": "icon.png",
+  "poster": "poster.jpg",
+	"previews": ["previews.jpg"],
 	"description": {
 	  "en":"A simple profolio website for your showcase.",
     "zh":"这是一个简单的作品集网站，用来展示您的作品。"
 	},
 
-  "templates":{
-    "index":{
-      "en": "Homepage",
-      "zh": "首页"
-    },
-    "page":{
-      "en": "Static Page",
-      "zh": "静态页面"
-    },
-    "works":{
-      "en": "Works",
-      "zh": "作品页"
-    },
-    "error-404": "404"
-  },
+  "templates": [
+    "index",
+    "page",
+    "works",
+    "error-404"
+  ],
 
-  "content_types":{
-    "works":{"title": "Portfolio"}
+  "content_types": {
+    "works": {"title": "Portfolio"}
   },
 
   "reserved_contents": {
     "error-404": true
   },
 
-	"options":{
-		"sortby":"date"
+	"options": {
+		"sortby": "date"
   }
 }
