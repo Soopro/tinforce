@@ -4,7 +4,7 @@
 	"title": "Tinforce",
   "author": "Redy Ru",
   "type": "ws",
-  "capabilities": [],
+  "capability": 0,
 	"icon": "icon.png",
   "poster": "poster.jpg",
 	"previews": ["previews.jpg"],
